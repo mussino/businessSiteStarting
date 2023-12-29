@@ -7,7 +7,7 @@ nav {
     display: flex;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     justify-content: center;
     background-color: black;
 }
@@ -112,4 +112,18 @@ nav .links a:hover {
     font-family: "Rubik Scribble";
     font-size: 4rem;
     color: white;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    padding: 0 30rem;
+}
+footer p {
+    padding: 0 2rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    /*fix this border lines*/
 }
