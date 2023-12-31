@@ -3,49 +3,58 @@
     padding: 0;
     margin: 0;
 }
-nav {
-    display: flex;
+header {
     position: fixed;
-    width: 100%;
-    z-index: 2;
-    justify-content: center;
-    background-color: black;
-}
-nav .logo img{
-    width: 40px;
-    padding: .5rem 0;
-    height: auto;
-    border-radius: 20px;
-}
-nav .links {
     display: flex;
-    font-size: .8rem;
-    font-weight: lighter;
-    font-family: 'Exo 2', sans-serif;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 1rem;
+    width: 100vw;
+    height: 60px;
+    z-index: 2;
+    background-color: #24252a;
 }
-nav .links li {
+header img{
+    width: 80px;
+    height: 40px;
+    margin-left: 2rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.nav {
+    display: flex;
     list-style: none;
-    padding: 0 .5rem;
 }
-nav .links a {
+.nav li a {
     text-decoration: none;
-    list-style: none;
-    background-color: black;
-    padding: .3rem .5rem;
-    border-radius: .4rem;
-    color: white;
+    padding: 0 2rem;
+    font-family: 'Exo 2';
+    font-size: 1.2rem;
+    color: orange;
+
 }
-nav .links a:hover {
+.nav li a:hover {
     cursor: pointer;
+    color: #0088a9;
+
 }
 
-/*Section Banner with cofee cups upodated*/
+header button {
+    margin-right: 2rem;
+    width: 80px;
+    height: 40px;
+    border-radius: 1rem;
+    text-decoration: none;
+    border: none;
+    font-family: "Rubik Scribble";
+    font-size: 1rem;
+    background-color: #0088a9;
+    color: white;
+}
+/*Section Banner with coffee cups updated*/
 .banner {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 60px;
     width: 100%;
     height: 50vh;
 }
@@ -67,7 +76,7 @@ nav .links a:hover {
     filter: blur(2px) brightness(70%);
 }
 
-/*Section Main*/
+/* Main Section*/
 .main {
     display: flex;
     justify-content: center;
@@ -85,7 +94,7 @@ nav .links a:hover {
     padding: 0 2rem;
 }
 .main p {
-    text-align: left;
+    text-align: justify;
     align-self: center;
     font-family: 'Exo 2';
     font-size: 1.5rem;
@@ -96,23 +105,55 @@ nav .links a:hover {
 .main span {
     font-weight: bold;
 }
+
+/*Type of coffees section*/
 .coffeeType {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
-    height: 550px;
+    height: 700px;
     background-image: url("./media/jonny-gios-CKApUn1rsxA-unsplash.jpg");
     background-position: center;
     background-size: cover;
+    
 }
-.coffeeType h4 {
-    align-self: center;
-    text-align: center;
+.robusta {
+    position: absolute;
+    align-self:flex-start ;
+    text-align: left;
     width: 100%;
     font-family: "Rubik Scribble";
     font-size: 4rem;
     color: white;
+    padding-left: 1rem;
 }
+.arabica {
+    position: absolute;
+    align-self:flex-start ;
+    text-align: right;
+    width: 100%;
+    font-family: "Rubik Scribble";
+    font-size: 4rem;
+    color: white;
+    padding-right: 1rem;
+
+}
+.image {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 2rem;
+}
+.image img {
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/*Footer Section*/
 footer {
     display: flex;
     justify-content: center;
@@ -128,18 +169,15 @@ footer img {
 }
 footer div {
     position: absolute;
-    padding: 0 20rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    /*fix this border lines*/
 }
 footer p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Exo 2', sans-serif;
-    padding: 0 5rem;
-    text-align: left;
+    
+    text-align: center;
+    padding: 20px 30px;
+    margin: 5px;
 }

@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    header img {
+        display: none;
+    }
+    .nav {
+        padding: 1rem 0;  
+    }
+    .nav li {
+        padding: .5rem 0;
+    }
+  .banner {
+    padding: 0;
+  }
+  .main {
+    display: block;
+    height: auto;
+  }
+  .main h2 {
+    font-size: 2rem;
+    padding: 3rem 1rem;
+  }
+  .main p {
+    padding-bottom: 4rem;
+    text-align: justify;
+  }
+  .coffeeType {
+    width: 100%;
+    height: auto;
+  }
+  .coffeeType h4 {
+    padding: 2rem;
+  }
+  .image {
+    margin-top: 6rem;
+  }
+ 
+}
