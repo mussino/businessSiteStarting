@@ -38,5 +38,40 @@
   .image {
     margin-top: 6rem;
   }
- 
+}
+@media (max-width: 375px) {
+    header {
+        display: none;
+    }
+    .banner {
+        width: 100%;
+        height: 50dvb;
+    }
+    .banner h1 {
+        font-size: 3rem;
+        
+    }
+    .main h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+
+    }
+    .main p {
+        font-size: 1.2rem;
+        padding: 2rem;
+    }
+    .coffeeType {
+        display: block;
+    }
+    .coffeeType h4 {
+        position: relative;
+        text-align: center;
+    }
+    .image {
+        margin-top: 0;
+        padding: 1rem;
+    }
+    footer div {
+        display: block;
+    }
 }
