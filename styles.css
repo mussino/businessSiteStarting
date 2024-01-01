@@ -12,6 +12,7 @@ header {
     height: 60px;
     z-index: 2;
     background-color: #24252a;
+    
 }
 header img{
     width: 80px;
@@ -19,10 +20,12 @@ header img{
     margin-left: 2rem;
     object-fit: cover;
     border-radius: 1rem;
+    transition: all 3s ease-in-out;
 }
 .nav {
     display: flex;
     list-style: none;
+    
 }
 .nav li a {
     text-decoration: none;
@@ -30,14 +33,13 @@ header img{
     font-family: 'Exo 2';
     font-size: 1.2rem;
     color: orange;
+    transition: all 2s ease-in-out;
 
+    &:hover {
+        cursor: pointer;
+        color: #0088a9;
+    }
 }
-.nav li a:hover {
-    cursor: pointer;
-    color: #0088a9;
-
-}
-
 header button {
     margin-right: 2rem;
     width: 80px;
@@ -49,7 +51,16 @@ header button {
     font-size: 1rem;
     background-color: #0088a9;
     color: white;
+    transition: all 3s ease;
+    transition: transform 1s;
+    
+    &:hover {
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
 }
+
+
 /*Section Banner with coffee cups updated*/
 .banner {
     display: flex;
@@ -67,7 +78,6 @@ header button {
     text-shadow: 2px 2px black;
     font-family: "Rubik Scribble";
     z-index: 1;
-
 }
 .banner img {
     width: 100%;
